@@ -1,0 +1,21 @@
+
+  
+    
+<link rel="stylesheet" type="text/css" href="css/content.css" />
+<div>
+<h1>Web Server Node JS</h1>
+<h3>Welcome to my web page <%= name %></h3>
+
+
+<% if (newCont.length < 1) { %>
+    <h3>Maaf Data Tidak Ditemukan</h3>
+<% }else {  %>
+    <h2>Daftar Contact</h2>
+        <ol>
+            <% newCont.forEach(element => { %>
+             <li>Name : <%= element.name %><br>Email : <%= element.email  %><br> Phone: <%= element.phone  %>  </li>
+            <% }) %> 
+        </ol>
+    
+    <% } %> 
+</div>

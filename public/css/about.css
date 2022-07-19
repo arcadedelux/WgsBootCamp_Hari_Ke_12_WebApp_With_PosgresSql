@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+  }
+
+
+  body {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+
+  .card {
+    position: relative;
+    text-align: center;
+    width: 700px;
+    height: 500px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 10;
+  }
+
+  .card .user {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10 solid #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+  }
+
+
+  .card h1 {
+    font-size: 2rem;
+  }
+
+  .card .text1 {
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .card .line {
+    width: 90%;
+    height: 2px;
+    background: #fff;
+    margin: 20px auto;
+  }
+
+  .card .text2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }

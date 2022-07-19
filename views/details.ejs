@@ -1,0 +1,20 @@
+
+
+<div class="card mt-5" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title"> <%=  detail.name  %> </h5>
+      <h6 class="card-subtitle mb-2 text-muted"><%=  detail.phone %></h6>
+      <p class="card-text"><%=  detail.email  %></p>
+      <a href='/contact/edit/<%= detail.name  %> ' class="btn btn-warning" 
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+  Edit Contact
+      </a>
+      <a href='/contact/delete/<%= detail.name  %> ' class="btn btn-danger" onclick="return confirm('Hapus Contact!')"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+  Delete Contact
+      </a>
+      <a href="/contact" class="card-link d-block mt-3">Back To Contact</a>
+     
+      
+    </div>
+  </div>

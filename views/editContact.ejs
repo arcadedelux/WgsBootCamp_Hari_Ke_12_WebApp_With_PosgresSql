@@ -1,0 +1,29 @@
+
+  <% if (errors !='') { %>
+    <div class="alert alert-danger" role="alert">
+      <ul>
+        <% errors.forEach(error => { %>
+          <li><%= error.msg  %> </li>
+        <% }) %>
+        
+      </ul>
+    </div>
+  <% } %>
+
+  <form method="post" action="/contact/edit" style="width: 18rem;">
+    <input type="hidden" name="oldName" class="form-control"  value='<%= getDataContactByName.oldName || getDataContactByName.name  %>' >
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" name="name" class="form-control" id="name" aria-describedby="Nama" required value='<%= getDataContactByName.name  %>' >
+        <div id="nama" class="form-text">Nama Anda</div>
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Phone Number</label>
+        <input type="text" name="phone" class="form-control" id="number" required value='<%= getDataContactByName.phone %>' >
+      </div>
+      <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Email</label>
+          <input type="text" name="email" class="form-control" id="email" value='<%= getDataContactByName.email  %>' >
+        </div>
+      <button type="submit" class="btn btn-primary">Edit</button>
+    </form>
